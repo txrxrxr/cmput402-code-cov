@@ -40,6 +40,10 @@ run {
 
 // TODO: Set jacoco version to be 0.8.5
 // TODO: Enable jacoco test report in xml format
+jacoco {
+    toolVersion = "0.8.5"
+}
+
 jacocoTestReport {
     reports {
         xml.enabled true
