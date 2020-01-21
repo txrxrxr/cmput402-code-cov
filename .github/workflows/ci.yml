@@ -26,5 +26,10 @@ jobs:
     - name: Run tests
       run: ./gradlew test
 
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v1
+      with:
+          token: ${{ secrets.CODECOV_TOKEN }} #required
+
     # TODO: Add Codecov (make sure to set up on codecov.io as well) 
     #       for test coverage reports
